@@ -1,0 +1,69 @@
+
+
+/* NAVBAR */
+.navbar-static-top .nav { padding: 15px 0; }
+.navbar-static-top .navbar-brand { padding: 20px 15px 0 15; height: 75px; }
+@media(min-width:768px) {
+    body { padding-top: 0px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */ }
+    .navbar-static-top .navbar-brand { padding: 15px 0; }
+}
+.navbar-inverse .navbar-nav> .hotel { background: transparent; }
+.navbar-inverse .navbar-nav> .hotel a { color: #fff; font-family: 'Lato', sans-serif; font-weight: 300; }
+.navbar-header .navbar-toggle { border-radius: 0px; background: transparent; margin-top: 20px; }
+nav .navbar-right ul li a { font-family: 'Lato', sans-serif;}
+.navbar-static-top { background-color: #191919; background-image: none; background-repeat: no-repeat; }
+.navbar-static-top .navbar-nav > .active > a,
+.navbar-static-top .navbar-nav > .active > a:hover,
+.navbar-static-top .navbar-nav > .active > a:focus { background-color: transparent; color: #555555;}
+.navbar-toggle .icon-bar {  display: block; width: 22px; height: 2px; border-radius: 1px; background-color: #fff; }
+.navbar-static-top .navbar-nav>li>a { text-shadow: 0 0px 0 rgba(255,255,255,.25); }
+.navbar-static-top .navbar-nav>li>a:hover { background-color: transparent; }
+.navbar-static-top .navbar-nav .contact a { color: #fff; }
+
+
+/* JUMBOTRON */
+.jumbotron { margin-top: -20px; background: url(../images/contact_bg.jpg) no-repeat bottom; height: 200px; }
+.jumbotron h1 { font-family: 'quicksand', sans-serif; display: inline-block; padding: 10px 20px; background-color: rgba(30,144,255,.6); margin-top: 80px; margin: 100px 0 0 0; color: #fff; }
+
+
+/* BREADCRUMBS */
+
+
+
+/* MAIN */
+.map h2 { font-family: 'Lato', sans-serif; font-weight: 200; color: #000; }
+.form h2 { font-family: 'Lato', sans-serif; font-weight: 200; color: #000; }
+.form[class^="col"] { padding: 0; }
+.form { margin-top: 30px; }
+
+
+
+.btn-custom {
+  background-color: #32a2e3;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 2px 0 #2679a9;
+     -moz-box-shadow: 0px 2px 0 #2679a9;
+       -o-box-shadow: 0px 2px 0 #2679a9;
+      -ms-box-shadow: 0px 2px 0 #2679a9;
+          box-shadow: 0px 2px 0 #2679a9;
+  color: #fff;
+  padding: 3px 6px;
+    margin: 50px 0;
+  width: 200px;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #2679a9;
+  border-color: transparent;
+}
+
+
+/* FOOTER */
+.navbar-bottom { background: #fff; padding-bottom: 20px; }
+.navbar .navbar-bottom { margin-top: -30px; border-radius: 0; }
+.navbar-bottom .copy { color: #666; margin-top: 40px; }
+.navbar-bottom .social { margin-top: 35px; }
+.navbar-bottom .social li { margin-right: 10px; }
+.navbar-bottom .map { margin-top: 25px; }

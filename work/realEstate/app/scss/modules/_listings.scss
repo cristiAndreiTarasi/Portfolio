@@ -1,0 +1,175 @@
+// Popupar Listing Section styles
+.listings {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1170px;
+        //height: 830px;
+
+        display: grid;
+        grid-template-rows: 250px 1fr;
+
+        // listings Title Styles
+        .listings--title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 50px;
+
+            .listings--heading {
+                @extend %section--heading;
+            }
+
+            .listings--title-btn {
+                border: none;
+                background-color: transparent;
+                color: rgba($accentRed, 50%);
+                border: 1px solid $accentRed;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                font-size: 11px;
+                font-weight: 400;
+                font-family: $copyFont;
+                @include transition(all, .5s);
+
+                &:hover {
+                    background-color: $accentBlue;
+                    color: #fff;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // Modules wrapper styles
+        .listings--modules {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+
+            // Module styles
+            .module {
+                border: 1px solid $borderGrey;
+                width: 32%;
+                height: 450px;
+                position: relative;
+
+
+                .flag {
+                    background-color: $headerBlue;
+                    display: inline-block;
+                    color: $white;
+                    font-size: 12px;
+                    font-family: $copyFont;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    z-index: 100;
+                }
+
+                .module--thumb {
+                    display: inline-block;
+                    width: 100%;
+                    height: 60%;
+                    overflow: hidden;
+
+                    .one, .two, .three {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        @include transition(all, .5s, ease-in-out);
+                        overflow: hidden;
+
+                        &:hover {
+                           transform: scale(1.1);
+                        }
+                    }
+
+                }
+
+                .one { background-image: url('../../../realEstate/app/img/module-img3.jpg'); }
+                .two { background-image: url('../img/module-img2.jpg'); }
+                .three { background-image: url('../img/module-img.jpg'); }
+
+            }
+
+
+            .module--article {
+                height: auto;
+
+                .heading--group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .module--heading,
+                    p:first-of-type {
+                        padding-left: 16px;
+                    }
+
+                    .module--heading {
+                        @extend %module--heading;
+                        padding-top: 16px;
+                    }
+
+                    .fas {
+                        color: $grey;
+                        padding-right: 16px;
+
+                        &:hover {
+                            color: $accentRed;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                p:first-of-type { 
+                    padding-left: 16px; 
+                    @extend %module--copy;
+                }
+
+                p:last-of-type {
+                    color: $headerBlue;
+                    font-family: $copyFont;
+                    font-size: 100%;
+                    padding: 16px 0 16px 16px;
+                }
+            }
+
+            .module--info {
+                border-top: 1px solid $borderGrey;
+                margin: 0 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+
+                p {
+                    font-size: 18px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    color: $accentBlue;
+                }
+
+                .module--btn {
+                    font-size: 11px;
+                    font-family: $headerFont;
+                    color: #fff;
+                    background-color: $accentRed;
+                    border: none;
+                    padding: 10px;
+                    @include transition(all, .5s);
+
+                    &:hover {
+                        background-color: $accentBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Estate Agency</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- header -->
+<header class="intro--header">
+    <div class="container">
+      <img src="images/logo_bright.svg" class="intro--logo">
+      <ul class="intro--list">
+          <li class="list--item">
+              <a class="list--link "href="index.html">Home</a>
+          </li>
+          <li class="list--item">
+              <a class="list--link "href="properties.html">Properties</a>
+          </li>
+          <li class="list--item">
+              <a class="list--link "href="contact.html">Contact</a>
+          </li>
+          <li class="list--item">
+              <a class="list--link "href="add.html"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add Property</a>
+          </li>
+      </ul>
+    </div>
+</header>
+<!-- endof header -->
+
+<!-- add-property-form -->
+<section class="add">
+    <div class="container">
+        <div class="wrapper">
+            <div class="signin">
+                <p class="signin--copy">If you don’t have an account you can optionally create one below by entering your email address/username. Your account details will be confirmed via email.</p>
+                <button class="signin--btn" type="button">Sign In</button>
+            </div>
+                <!-- end of sign-in -->
+
+            <form action="">
+                <fieldset class="fieldset">
+                    <div class="form--group">
+                        <label class="group--label" for="email">Your email (optional)</label>
+                        <input type="email" placeholder="Email" name="email"
+                        class="group--input">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="name">Listing Name</label>
+                        <input type="email" placeholder="Your Listing Name" class="group--input" name="name" >
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="location">Location (optional)</label>
+                        <input type="email" placeholder="Your City"
+                        name="location" class="group--input">
+                    </div>
+                    <div class="map--box"></div>
+                </fieldset>
+                    <!-- end of fieldset 1 -->
+
+                <fieldset class="fieldset">
+                    <div class="form--group">
+                        <label class="group--label" for="contact-email">Contact Email</label>
+                        <input type="email" placeholder="Your Email"
+                        name="contact-email" class="group--input">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="listing--region">Listing Region</label>
+                        <input type="email" placeholder="Select a region"
+                        name="listing--region" class="group--input">
+                        <datalist class="region">
+                            <option placeholder="Region 1"></option>
+                            <option placeholder="Region 2"></option>
+                            <option placeholder="Region 3"></option>
+                            <option placeholder="Region 4"></option>
+                            <option placeholder="Region 5"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="listing--categ">Listing Category</label>
+                        <input type="email" placeholder="Select one or more categories"
+                        name="listing--categ" class="group--input">
+                        <datalist class="categories">
+                            <option placeholder="Category 1"></option>
+                            <option placeholder="Category 2"></option>
+                            <option placeholder="Category 3"></option>
+                            <option placeholder="Category 4"></option>
+                            <option placeholder="Category 5"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                    <!-- end of fieldset 2 -->
+
+                <fieldset class="fieldset">
+                    <!--<div class="form--group">-->
+                        <!--<label class="group--label" for="files">Cover Image (optional)</label>-->
+                        <!--<input class="group--input upload" type="file" placeholder="Upload Image" id="files" name="files[]" multiple>-->
+                        <!--<output id="list"></output>-->
+                    <!--</div>-->
+
+                    <div class="form--group">
+                        <label class="group--label" for="descript">Description</label>
+                        <textarea class="descript" name="descript" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="website">Website (optional)</label>
+                        <input class="group--input" name="website" type="url" placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="phone">Phone Number
+                            (optional)</label>
+                        <input class="group--input" type="tel" name="phone"
+                        placeholder="tel no">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="video">Video (optional)</label>
+                        <input class="group--input" name="video" type="url"
+                        placeholder="URL to video">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="twitter">Twitter Url (optional)</label>
+                        <input class="group--input" name="twitter" type="url"
+                        placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="face">URL to Facebook (optional)</label>
+                        <input class="group--input" name="face" type="url"
+                        placeholder="http://">
+                    </div>
+
+                    <div class="form--group">
+                        <label class="group--label" for="insta">Url to Instagram
+                        (optional)</label>
+                        <input class="group--input" name="insta" type="url"
+                        placeholder="http://">
+                    </div>
+                </fieldset>
+                    <!-- end of fieldset 3 -->
+
+                <input class="add--btn" type="button" value="Add Property">
+            </form>
+        </div>
+            <!-- end of wrapper -->
+    </div>
+        <!-- end of container -->
+</section>
+    <!-- end of add -->
+<!-- end of add-property-form -->
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer--modules">
+          <section class="footer--module logo">
+              <img src="../images/logo_bright.svg" class="footer--logo" alt="logo">
+              <p class="module--copy">Consectetur dolorum quasi dolores molestiae molestiae. Excepturi placeat voluptas placeat laudantium alias reprehenderit esse, asperiores? Animi nemo molestiae maxime accusantium dignissimos! Aspernatur debitis eaque dolorem provident fugiat ut est? Fuga</p>
+          </section>
+            <!-- end of logo -->
+
+          <section class="footer--module address">
+              <h2 class="module--heading">Contact Us</h2>
+              <ul class="module--list">
+                  <li class="list--item">
+                      <a href="#" class="list--link">New York</a>
+                  </li>
+                  <li class="list--item">
+                      <a href="#" class="list--link">
+                          <i class="fas fa-map-marker-alt"></i>
+                          227 W 27th St. New York. NY 100001
+                      </a>
+                  </li>
+                  <li class="list--item">
+                      <a href="#" class="list--link">
+                          <i class="fas fa-phone"></i>
+                          +1 234-567-8910
+                      </a>
+                  </li>
+                  <li class="list--item">
+                      <a href="#" class="list--link">
+                          <i class="fas fa-envelope"></i>
+                          support@example.com
+                      </a>
+                  </li>
+              </ul>
+          </section>
+          <!-- end of contact -->
+
+          <section class="footer--module links">
+              <h2 class="module--heading">Recomended Links</h2>
+              <nav class="module--nav">
+                  <ul class="module--list">
+                      <li class="list--item"><a href="#" class="list--link">About</a></li>
+                      <li class="list--item"><a href="#" class="list--link">Company</a></li>
+                      <li class="list--item"><a href="#" class="list--link">News</a></li>
+                      <li class="list--item"><a href="#" class="list--link">Careers</a></li>
+                  </ul>
+                  <ul class="module--list">
+                      <li class="list--item"><a href="#" class="list--link">Team</a></li>
+                      <li class="list--item"><a href="#" class="list--link">Testimonials</a></li>
+                      <li class="list--item"><a href="#" class="list--link">Cooperation</a></li>
+                      <li class="list--item"><a href="#" class="list--link">Press</a></li>
+                  </ul>
+              </nav>
+          </section>
+          <!-- end of links -->
+
+          <section class="footer--module newsletter">
+              <h2 class="module--heading">Our Newsletter</h2>
+              <div class="module--form">
+                  <input type="email" class="module--input">
+                  <button class="module--btn">Sign Up</button>
+              </div>
+              <ul class="social">
+                  <li class="list--item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="list--item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list--item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li class="list--item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li class="list--item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
+          </section>
+          <!-- end of newsletter -->
+      </div>
+        <!-- end of footer modules -->
+  </div>
+    <!-- end of container -->
+</footer>
+<!-- end of footer -->
+
+    <script src="js/imageUpload.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+// Imports
+// @import "variables";
+// @import "mixins";
+// @import "extends";
+
+// Styles
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    justify-content: center;
+
+    height: 800px;
+
+    
+    .google--map {
+      background: url('../img/world-map.jpg') 100% center;
+      height: 800px;
+      width: 100%;
+    }
+
+    // Floating listing panel Styles
+    .container {
+        width: 1170px;
+        height: 400px;
+        display: flex;
+        justify-self: center;
+        align-items: flex-end;
+
+        .module {
+            border: 1px solid $borderGrey;
+            width: 450px;
+            height: 210px;
+            //position: absolute;
+            background-color: #fff;
+
+            .module--article {
+                height: auto;
+
+                .module--heading,
+                p:first-of-type {
+                    padding-left: 16px;
+                }
+
+
+                .module--heading {
+                    @extend %module--heading;
+                    padding-top: 16px;
+                }
+
+                & p:first-of-type {
+                    @extend %module--copy;
+                }
+
+                & p:last-of-type {
+                    color: $headerBlue;
+                    font-family: $copyFont;
+                    font-size: 100%;
+                    padding: 16px 0 16px 16px;
+                }
+            }
+
+            .module--info {
+                border-top: 1px solid $borderGrey;
+                margin: 0 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 90px;
+
+                p {
+                    font-size: 18px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    color: $accentBlue;
+                }
+
+                .module--btn {
+                    font-size: 11px;
+                    color: #fff;
+                    background-color: $accentRed;
+                    border: none;
+                    padding: 10px;
+                    @include transition(all, .5s);
+
+                    &:hover {
+                        background-color: $accentBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    // Intro Search Form Section Styles
+    .intro--search {
+        display: flex;
+        width: 1170px;
+        justify-self: center;
+        align-self: end;
+        margin-bottom: -50px;
+        @extend %boxShadow;
+
+        .intro--input, 
+        .intro--listings, 
+        .listings--btn {
+            height: 100px;
+            padding: 40px;
+            border: none;
+        }
+
+        .intro--input {
+            width: 60%;
+            @extend %borderRight;
+            &::placeholder {
+                color: $subtleBlue;
+                font-family: $copyFont;
+                font-weight: 700; 
+                font-size: 15px;
+            }
+        }
+
+        .intro--listings.type {
+            @extend %borderRight;
+            width: 22%;
+        }
+
+        .intro--listings.beds {
+            width: 18%;
+        }
+
+        select, option {
+            color: $subtleBlue;
+            font-family: $copyFont;
+            font-size: 15px;
+        }
+
+        .listings--btn {
+            background-color: $accentRed;
+            color: #fff;
+            @include transition(all, .5s);
+
+            &:hover {
+                background-color: $accentBlue;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

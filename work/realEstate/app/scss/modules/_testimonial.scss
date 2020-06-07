@@ -1,0 +1,99 @@
+.carousel-inner.testimonial {
+    height: 650px;
+    z-index: -100;
+
+    .carousel-item {
+        height: 650px;
+        @extend %carousel--module;
+
+        .testimonial--thumb {
+            background: url('../img/client_1.jpg') 100% center;
+            background-size: cover;
+        }
+
+        .testimonial--quote {
+            background: $mediumBlue;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .testimonial--blockquote {
+                padding: 70px;
+
+                .fas {
+                    font-size: 2em;
+                    margin-bottom: 40px;
+                    color: #ff6363;
+                }
+
+                .testimonial--copy {
+                    color: $white;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    font-size: 2em;
+                }
+
+                .testimonial--list {
+                    margin-top: 40px;
+
+                    .list--item:first-child {
+                        font-family: $headerFont;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
+
+                    .list--item:last-child {
+                        font-family: $copyFont;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $accentBlue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn--group {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  display: flex;
+  height: 90px;
+  width: 180px;
+}
+
+.carousel-control-prev.left,
+.carousel-control-next.right {
+    margin: 0;
+    //margin-left: 100px;
+    height: 90px;
+    width: 90px;
+    background: $headerBlue;
+    opacity: 1;
+    z-index: 110;
+    @include transition(background-color);
+
+    &:hover, &:focus {
+        background-color: $accentBlue;
+        outline: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

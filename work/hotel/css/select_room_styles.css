@@ -1,0 +1,115 @@
+
+
+/* NAVBAR */
+.navbar-static-top .nav { padding: 15px 0; }
+.navbar-static-top .navbar-brand { padding: 20px 15px 0 15; height: 75px; }
+@media(min-width:768px) {
+    body { padding-top: 0px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */ }
+    .navbar-static-top .navbar-brand { padding: 15px 0; }
+}
+.navbar-inverse .navbar-nav> .hotel { background: transparent; }
+.navbar-inverse .navbar-nav> .hotel a { color: #fff; font-family: 'Lato', sans-serif; font-weight: 300; }
+.navbar-header .navbar-toggle { border-radius: 0px; background: transparent; margin-top: 20px; }
+nav .navbar-right ul li a { font-family: 'Lato', sans-serif;}
+.navbar-static-top { background-color: #191919; background-image: none; background-repeat: no-repeat; }
+.navbar-static-top .navbar-nav > .active > a,
+.navbar-static-top .navbar-nav > .active > a:hover,
+.navbar-static-top .navbar-nav > .active > a:focus { background-color: transparent; color: #555555;}
+.navbar-toggle .icon-bar {  display: block; width: 22px; height: 2px; border-radius: 1px; background-color: #fff; }
+.navbar-static-top .navbar-nav>li>a { text-shadow: 0 0px 0 rgba(255,255,255,.25); }
+.navbar-static-top .navbar-nav>li>a:hover { background-color: transparent; }
+.navbar-static-top .navbar-nav .reservation a { color: #fff; }
+
+
+/* JUMBOTRON */
+.jumbotron { margin-top: -20px; background: url(../images/reservation_bg2.jpg) no-repeat bottom; height: 200px; }
+.jumbotron h1 { font-family: 'quicksand', sans-serif; display: inline-block; padding: 10px 20px; background-color: rgba(30,144,255,.6); margin-top: 80px; margin: 100px 0 0 0; color: #fff; }
+
+
+/* BREADCRUMBS */
+.breadcrumb {
+    padding: 30px 15px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    list-style: none;
+    background: -webkit-linear-gradient(left, #ebebeb 0%, #ffffff 50%, #ebebeb 100%);
+    background:    -moz-linear-gradient(left, #ebebeb 0%, #ffffff 50%, #ebebeb 100%);
+    background:     -ms-linear-gradient(left, #ebebeb 0%, #ffffff 50%, #ebebeb 100%);
+    background:      -o-linear-gradient(left, #ebebeb 0%, #ffffff 50%, #ebebeb 100%);
+    background:         linear-gradient(left, #ebebeb 0%, #ffffff 50%, #ebebeb 100%);
+}
+
+.effect {
+  	position:relative;       
+    -webkit-box-shadow:0 0px 0px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+       -moz-box-shadow:0 0px 0px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+            box-shadow:0 0px 0px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+}
+.effect:before, .effect:after {
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 0 10px rgba(0,0,0,0.2);
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+
+.breadcrumb li a span { background-color: transparent; border: 1px solid #68BCFF; color: #4070FF; }
+.breadcrumb li .active { color: red; }
+.breadcrumb li.active a span { background-color: #68BCFF; color: #fff; border: none; }
+.breadcrumb .active>a { color: red; }
+
+
+/* MAIN */
+.panel { margin-top: 30px; }
+.panel .panel-body { padding: 0; }
+.panel .panel-body div { display: inline;}
+.panel .panel-body .empty { }
+.panel .panel-body .content { }
+
+.top article { padding-bottom: 20px; border-bottom: 1px dashed #acc4ce; }
+.top article h2 { font-family: 'lato', sans-serif; font-weight: 300; color: #000; padding: 10px 0; }
+.top article p { color: #666; }
+
+.content h4 { font-family: 'lato', sans-serif; font-weight: 700; color: #000; }
+.content ul li { color: #727272; }
+.content .price { font-family: 'lato', sans-serif; font-size: 1.4em; font-weight: 700; color: #000; }
+.content { border-left: 1px solid #acc4ce; }
+.content article { border-bottom: 1px dashed #acc4ce; }
+
+
+.btn-custom {
+  background-color: #32a2e3;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 2px 0 #2679a9;
+     -moz-box-shadow: 0px 2px 0 #2679a9;
+       -o-box-shadow: 0px 2px 0 #2679a9;
+      -ms-box-shadow: 0px 2px 0 #2679a9;
+          box-shadow: 0px 2px 0 #2679a9;
+  color: #fff;
+  padding: 3px 6px;
+  width: 120px;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #2679a9;
+  border-color: transparent;
+}
+
+
+/* FOOTER */
+.navbar-bottom { background: #fff; padding-bottom: 20px; }
+.navbar .navbar-bottom { margin-top: -30px; border-radius: 0; }
+.navbar-bottom .copy { color: #666; margin-top: 40px; }
+.navbar-bottom .social { margin-top: 35px; }
+.navbar-bottom .social li { margin-right: 10px; }
+.navbar-bottom .map { margin-top: 25px; }

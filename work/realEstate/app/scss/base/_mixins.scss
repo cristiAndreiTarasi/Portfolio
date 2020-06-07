@@ -1,0 +1,16 @@
+// Mixins
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        box-shadow:inset $top $left $blur $color;
+    } @else {
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}

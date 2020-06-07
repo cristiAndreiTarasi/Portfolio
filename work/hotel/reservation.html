@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Paradise Hotel</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reservation_styles.css" />
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="images/favicon.jpg" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient { filter: none; }
+            </style>
+    <![endif]-->
+</head>
+
+
+<body style="background-color: #ebebeb;">
+   
+    <!-- Navigation -->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Hotel</a></li>
+                    <li><a href="rooms_suites.html">Rooms & Suites</a></li>
+                    <li class="reservation"><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <!-- End Of Navigation -->
+ 
+    <!-- Banner -->
+    <div class="jumbotron">
+        <div class="fluid-container">
+            <div class="row">
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of jumbotron -->
+    <!-- End Of Banner -->
+      
+      
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb text-center gradient effect" role="tablist">
+                <li class="active" role="presentation"><a href="reservation.html"><span class="badge">1</span> Basic Information</a></li>
+                <li role="presentation"><a href="select_room.html"><span class="badge">2</span> Select Room</a></li>
+                <li role="presentation"><a href="guest_info.html"><span class="badge">3</span> Guest Information</a></li>
+                <li role="presentation"><a href="finish.html"><span class="badge">4</span> Finish</a></li>
+            </ol>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- End Of Breadcrumbs -->
+
+
+      
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6 col-md-offset-3 col-sm-offset-1 titl">
+                <article>
+                    <h2>Basic Information</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores perferendis hic deserunt cumque reiciendis distinctio repellat doloremque in, quas, itaque velit molestias, eos debitis dignissimos quaerat sed explicabo qui rem.</p>
+                </article>
+            </div>
+        </div> <!-- end of row -->
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6 col-md-offset-3 col-sm-offset-1 form">
+                <form class="">
+                    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+                        <label for="exampleInputEmail1">Check-In:</label>
+                        <div class='input-group date' id='datetimepicker6'>
+                            <input type='text' class="form-control" placeholder="30.01.2012" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+                        <label for="exampleInputEmail1">Check-Out:</label>
+                        <div class='input-group date' id='datetimepicker6'>
+                            <input type='text' class="form-control" placeholder="30.03.2012" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 form-group">
+                        <label for="exampleInputEmail1">Nr. of rooms:</label>
+                        <select class="form-control">
+                            <option value="" default selected>1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 form-group">
+                        <label for="exampleInputEmail1">Adults per room:</label>
+                        <select class="form-control">
+                            <option value="" default selected>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 form-group">
+                        <label for="exampleInputEmail1">Children 0-5:</label>
+                        <select class="form-control">
+                            <option value="" default selected>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 form-group">
+                        <label for="exampleInputEmail1">Children 6-12:</label>
+                        <select class="form-control">
+                            <option value="" default selected>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form> <!-- end of form-inline -->
+            </div>
+        </div>
+
+        <div class="row continue">
+            <a href="select_room.html"><button type="submit" class="btn-custom center-block">Continue</button></a>
+        </div>
+    </div> <!-- end of container -->
+    <!-- End Of Main Content -->
+       
+       
+    <!-- Footer -->
+        <div class="navbar-bottom" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 copy text-center">&copy; 2011 Paradise Hotel. All Rights Reserved.</div>
+                    <div class="col-lg-4 social text-center">
+                        <ul class="list-inline">
+                            <li><a href="#"><span><i class="fa fa-twitter fa-2x"></i></span></a></li>
+                            <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center map">
+                        <ul class="nav navbar-nav">
+                            <li><a href="rooms_suites.html">Rooms & Suites</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- end of container -->
+        </div> <!-- end of navbar-fixed-bottom -->
+    <!-- End of Footer -->
+
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom_script.js"></script>   
+</body>
+</html>

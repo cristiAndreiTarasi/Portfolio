@@ -1,0 +1,123 @@
+// Add Property
+
+.add {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1170px;
+        border: 1px solid $borderGrey;
+        margin: 100px 0;
+    }
+
+    .wrapper {
+        margin: 40px;
+
+        // the sign in row on top af the form
+        .signin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: #f9f9f9;
+            border: 1px solid $borderGrey;
+
+            .signin--copy {
+                width: 80%;
+                color: $grey;
+                font-family: $copyFont;
+                font-size: 100%;
+                font-weight: 300;
+                padding: 0 15px;
+            }
+
+            .signin--btn {
+                //width: 150px;
+                @extend %--btn;
+                background-color: $accentRed;
+                color: $white;
+                font-family: $headerFont;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: 15px 50px;
+                margin: 13px;
+                @include transition(background-color, .5s, ease-in-out);
+
+                &:hover {
+                    background-color: $accentBlue;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .form--group {
+            display: inline-block;
+            height: 75px;
+            width: 100%;
+            margin-top: 40px;
+
+            .group--label,
+            .group--input {
+                //display: block;
+            }
+
+            .group--label {
+                @extend %module--heading;
+            }
+
+            .group--input {
+                @extend %--btn;
+                height: 50px;
+                width: 100%;
+                margin-top: 10px;
+                @extend %module--copy;
+                border: 1px solid $borderGrey;
+
+                &::placeholder {
+                    padding-left: 20px;
+                }
+            }
+
+            .descript {
+                height: 350px;
+                width: 100%;
+                background-color: rgba($grey, .3);
+                margin-top: 10px;
+                border: 1px solid $borderGrey;
+            }
+
+        }
+
+        .map--box {
+            height: 350px;
+            width: 100%;
+            background-color: rgba($grey, .3);
+            margin-top: 40px;
+            background: url('../img/world-map.jpg') 100% center;
+            background-size: cover;
+            border: 1px solid $borderGrey;
+        }
+    }
+
+    .add--btn {
+        @extend %--btn;
+        display: block;
+        width: 100%;
+        background-color: $accentRed;
+        color: $white;
+        font-family: $headerFont;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 15px 50px;
+        margin-top: 40px;
+        @include transition(background-color, .5s, ease-in-out);
+
+        &:hover {
+            background-color: $accentBlue;
+            cursor: pointer;
+        }
+    }
+}
+
